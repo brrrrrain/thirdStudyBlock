@@ -14,8 +14,8 @@ public class Sort {
                 }
             }
         }
-        return array;
 
+        return array;
     }
 
     public int[] choiseSort(int[] array1) {
@@ -31,8 +31,6 @@ public class Sort {
                     index = j;
                     element = array1[j];
                 }
-                //array1[index] = array1[i];
-                //array1[i] = element;
             }
             if (i != index){
                 int temp = array1[i];
@@ -44,6 +42,7 @@ public class Sort {
         for (int i = 0; i < array1.length; i++) {
             System.out.print(array1[i]);
         }
+
         return array1;
     }
 }

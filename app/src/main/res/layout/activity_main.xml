@@ -10,20 +10,29 @@
         android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/str" />
 
     <TextView
         android:id="@+id/tvAnotherResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/anotherstr" />
+
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/btnId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/click"
+        android:textColor="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/anotherId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         android:text="Click"
-        android:textColor="@color/colorPrimary"
-        android:background="@color/colorAccent"/>
+        android:textColor="@color/colorPrimaryDark"/>
 
 </LinearLayout>
