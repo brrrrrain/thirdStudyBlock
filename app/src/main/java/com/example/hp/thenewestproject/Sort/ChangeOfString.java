@@ -1,7 +1,7 @@
 package com.example.hp.thenewestproject.Sort;
 
 /**
- * Класс, который ищет число в строке и увеличивает его на еденицу
+ * Класс, который ищет число в строке и увеличивает его на единицу
  */
 
 public class ChangeOfString {

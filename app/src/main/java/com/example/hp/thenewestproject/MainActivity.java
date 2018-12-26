@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     private int[] arr = {2, 4, 1, 5, 6, 3};
     private int[] arr1 = {5, 4, 7, 1, 2, 3, 1, 8};
-    final int A = 5;
-    final int B = 15;
+    private final double A = 5;
+    private final double B = 15;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tvResult = findViewById(R.id.tvResult);
         TextView newText = findViewById(R.id.tvAnotherResult);
+        TextView averageResult = findViewById(R.id.averageResult);
         Button btn = findViewById(R.id.btnId);
 
         Sort newSort = new Sort();
@@ -42,14 +43,16 @@ public class MainActivity extends AppCompatActivity {
 
         int[] sortMass = newSort.bubbleSort(arr);
         int[] newSortMass = newSort.choiseSort(arr1);
+        double myAverage = newAverage.searchofaverage(A,B);
 
 
         tvResult.setText(Arrays.toString(sortMass));
         newText.setText(Arrays.toString(newSortMass));
+        averageResult.setText(Double.toString(myAverage));
 
 
         newString.fullnamestring();
-        newAverage.searchofaverage(A,B);
+        //newAverage.searchofaverage(A,B);
         newFibonachi.putFibonachi();
         newChange.findNumber();
 
