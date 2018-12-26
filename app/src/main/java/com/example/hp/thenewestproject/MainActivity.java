@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         double myAverage = newAverage.searchofaverage(A,B);
         String myString = newString.fullnamestring();
         int[] fibonachiMass = newFibonachi.putFibonachi();
+        String myChange = newChange.findNumber();
 
 
         tvResult.setText(Arrays.toString(sortMass));
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         averageResult.setText(Double.toString(myAverage));
         stringResult.setText(myString);
         fibonachiResult.setText(Arrays.toString(fibonachiMass));
+        newText.setText(myChange);
 
 
 
