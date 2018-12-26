@@ -6,11 +6,11 @@ package com.example.hp.thenewestproject.Sort;
 
 public class NameString {
 
-    public void fullnamestring(){
-        String Name = "Илья";
-        String Surname = "Тенишев";
-        System.out.println();
-        System.out.println(Name + " " + Surname);
-        System.out.println();
+    public String fullnamestring(){
+        String name = "Илья";
+        String surname = "Тенишев";
+        String finalName = name + surname;
+
+        return  finalName;
     }
 }

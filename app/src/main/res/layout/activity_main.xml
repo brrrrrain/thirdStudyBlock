@@ -25,7 +25,7 @@
         android:text="@string/anotherstr" />
 
     <TextView
-        android:id="@+id/avResult"
+        android:id="@+id/stringResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/anotherstr" />

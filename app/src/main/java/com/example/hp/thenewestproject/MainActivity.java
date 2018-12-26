@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         TextView tvResult = findViewById(R.id.tvResult);
         TextView newText = findViewById(R.id.tvAnotherResult);
         TextView averageResult = findViewById(R.id.averageResult);
+        TextView stringResult = findViewById(R.id.stringResult);
         Button btn = findViewById(R.id.btnId);
 
         Sort newSort = new Sort();
@@ -44,11 +45,13 @@ public class MainActivity extends AppCompatActivity {
         int[] sortMass = newSort.bubbleSort(arr);
         int[] newSortMass = newSort.choiseSort(arr1);
         double myAverage = newAverage.searchofaverage(A,B);
+        String myString = newString.fullnamestring();
 
 
         tvResult.setText(Arrays.toString(sortMass));
         newText.setText(Arrays.toString(newSortMass));
         averageResult.setText(Double.toString(myAverage));
+        stringResult.setText(myString);
 
 
         newString.fullnamestring();
