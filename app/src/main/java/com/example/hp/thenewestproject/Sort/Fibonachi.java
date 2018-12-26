@@ -6,20 +6,22 @@ package com.example.hp.thenewestproject.Sort;
 
 public class Fibonachi {
 
-    public void putFibonachi(){
-        int firstelement = 0;
-        int nexttofirstelement = 1;
+    public int[] putFibonachi(){
+        int firstElement = 0;
+        int nextToFirstElement = 1;
         int current = 0;
+        int[] array = new int[15];
 
-        System.out.println(firstelement);
-        System.out.println(nexttofirstelement);
+        array[0] = firstElement;
+        array[1] = nextToFirstElement;
 
-        for (int i = 1; i < 14; i++){
-            current = firstelement + nexttofirstelement;
-            firstelement = nexttofirstelement;
-            nexttofirstelement = current;
-            System.out.println(current);
+        for (int i = 2; i < 15; i++){
+                current = firstElement + nextToFirstElement;
+                firstElement = nextToFirstElement;
+                nextToFirstElement = current;
+                array[i] = current;
         }
-        System.out.println();
+
+        return array;
     }
 }
