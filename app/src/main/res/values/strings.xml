@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TheNewestProject</string>
     <string name="str">Hello World!</string>
-    <string name="anotherstr">Hello World!</string>
-    <string name="click">Click</string>
+    <string name="anotherStr">Hello World!</string>
+    <string name="btn_mock_text">Mock_Text</string>
     <string name="textByButton">textText</string>
 </resources>

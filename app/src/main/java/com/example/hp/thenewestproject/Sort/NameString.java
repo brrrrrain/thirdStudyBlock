@@ -9,7 +9,7 @@ public class NameString {
     public String fullnamestring(){
         String name = "Илья";
         String surname = "Тенишев";
-        String finalName = name + surname;
+        String finalName = name + " " + surname;
 
         return  finalName;
     }

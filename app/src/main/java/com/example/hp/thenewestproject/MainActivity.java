@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         TextView averageResult = findViewById(R.id.averageResult);
         TextView stringResult = findViewById(R.id.stringResult);
         TextView fibonachiResult = findViewById(R.id.fibonachiResult);
-        Button btn = findViewById(R.id.btnId);
+        Button btnPrintText = findViewById(R.id.btnId);
 
         Sort newSort = new Sort();
         AverageConst newAverage = new AverageConst();
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         newChange.findNumber();
 
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btnPrintText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), getString(R.string.textByButton), Toast.LENGTH_LONG).show();
