@@ -6,7 +6,7 @@ package com.example.hp.thenewestproject.Sort;
 
 public class AverageConst {
 
-  public double searchofaverage(final double A, final  double B){
+  public double searchOfAverage(final double A, final  double B){
       double sum = A + B;
       double average = sum / 2;
 

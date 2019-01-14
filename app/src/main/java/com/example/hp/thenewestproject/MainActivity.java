@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         int[] sortMass = newSort.bubbleSort(arr);
         int[] newSortMass = newSort.choiseSort(arr1);
-        double myAverage = newAverage.searchofaverage(A,B);
+        double myAverage = newAverage.searchOfAverage(A,B);
         String myString = newString.fullnamestring();
         int[] fibonachiMass = newFibonachi.putFibonachi();
         String myChange = newChange.findNumber();
