@@ -7,12 +7,12 @@ package com.example.hp.thenewestproject.Sort;
 public class ChangeOfString {
 
     public String findNumber(){
-        String  Str = "abc19";
-        int  number = Integer.parseInt(Str.replaceAll("[^0-9]", ""));
+        String  str = "abc19";
+        int  number = Integer.parseInt(str.replaceAll("[^0-9]", ""));
         int  numberToNewString = number + 1;
-        String  NumberString = Integer.toString(numberToNewString);
-        String  currentString = Str.replaceAll("[^A-Za-z]","");
-        String  finalString = currentString + NumberString;
+        String  numberString = Integer.toString(numberToNewString);
+        String  currentString = str.replaceAll("[^A-Za-z]","");
+        String  finalString = currentString + numberString;
 
         return finalString;
     }
