@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hp.thenewestproject.Sort.EnumDirections;
+import com.example.hp.thenewestproject.Sort.LyamdaTask;
 import com.example.hp.thenewestproject.Sort.Sort;
 
 import java.util.ArrayList;
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         EnumDirections newEnum = new EnumDirections();
         int[] resutedArray = newEnum.changeCoordinates(3,4, EnumDirections.Directions.UP);
         int[] outPutArray = newEnum.fewSteps();
+
+        LyamdaTask newLyambda = new LyamdaTask();
 
         tvResult.setText(Arrays.toString(resutedArray));
         newText.setText(Arrays.toString(outPutArray));

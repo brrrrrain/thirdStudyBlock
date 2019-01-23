@@ -5,5 +5,15 @@ package com.example.hp.thenewestproject.Sort;
  */
 
 public class LyamdaTask {
+    public void repeatTask(int times, Runnable task){
+        for (int i = 0; i < times; i++){
+            task.print("I love Java");
+        }
+    }
 
+
+}
+
+interface Runnable{
+    void print(String str);
 }
