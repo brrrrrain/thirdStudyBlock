@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvResult"
@@ -12,27 +13,26 @@
         android:layout_height="wrap_content"
         android:text="@string/str" />
 
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/click"
+        android:textColor="@color/colorPrimaryDark" />
+
     <TextView
         android:id="@+id/tvAnotherResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/anotherstr" />
 
-
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/btnId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:text="@string/click"
-        android:textColor="@color/colorPrimary" />
-
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/anotherId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:text="Click"
+        android:text="@string/secondButton"
         android:textColor="@color/colorPrimaryDark"/>
 
 </LinearLayout>
