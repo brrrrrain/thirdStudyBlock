@@ -35,4 +35,18 @@
         android:text="@string/secondButton"
         android:textColor="@color/colorPrimaryDark"/>
 
+    <TextView
+        android:id="@+id/lyambdaTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/anotherstr" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/anotherId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/secondButton"
+        android:textColor="@color/colorPrimaryDark"/>
+
 </LinearLayout>

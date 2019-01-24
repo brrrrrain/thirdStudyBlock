@@ -3,10 +3,9 @@
     <string name="str">Hello World!</string>
     <string name="anotherstr">Hello World!</string>
     <string name="click">Пояснение к строке</string>
-    <string name="textByButton">Первые 2 цифры - начальные координаты,
-        вторые две - после сделанного шага</string>
+    <string name="textByButton">Координаты после перехода</string>
     <string name="secondButton">Пояснение к строке</string>
     <string name="secondButtonText">Первые 2 цифры - начальные
         координаты, далее - каждая пара это координаты после
-        сделанного шага, последние две цифры - конечные координаты</string>
+        сделанного перехода, последние две цифры - конечные координаты</string>
 </resources>
