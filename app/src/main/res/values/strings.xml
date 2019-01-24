@@ -8,4 +8,10 @@
     <string name="secondButtonText">Первые 2 цифры - начальные
         координаты, далее - каждая пара это координаты после
         сделанного перехода, последние две цифры - конечные координаты</string>
+    <string name="btnShowRectPerimetr"> Найти периметр прямоугольника </string>
+    <string name="btnShowRectArea"> Найти площадь прямоугольника </string>
+    <string name="btnShowSquarePerimetr"> Найти периметр квадрата </string>
+    <string name="btnShowSquareArea"> Найти площадь квадрата </string>
+    <string name="btnShowCirclePerimetr"> Найти периметр круга </string>
+    <string name="btnShowCircleArea"> Найти площадь круга </string>
 </resources>
