@@ -1,14 +1,14 @@
 package com.example.hp.thenewestproject.Figure;
 
-public class Circle implements FigureWithInterface.Shape {
+public class Circle implements Shape {
     private double diametr;
-
-    public double getDiametr() {
-        return diametr;
-    }
 
     public Circle(double diametr) {
         this.diametr = diametr;
+    }
+
+    public double getDiametr() {
+        return diametr;
     }
 
     @Override

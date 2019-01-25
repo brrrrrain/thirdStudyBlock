@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.example.hp.thenewestproject.Figure.Circle;
 import com.example.hp.thenewestproject.Figure.Rectangle;
 import com.example.hp.thenewestproject.Figure.Square;
+import com.example.hp.thenewestproject.Sort.Directions;
 import com.example.hp.thenewestproject.Sort.EnumDirections;
 import com.example.hp.thenewestproject.Sort.LyamdaTask;
 import com.example.hp.thenewestproject.Sort.Sort;
@@ -22,9 +23,6 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
-
-    private int[] arr = {2, 4, 1, 5, 6, 3};
-    private int[] arr1 = {5, 4, 7, 1, 2, 3, 1, 8};
 
     @BindView(R.id.btnId)
         Button firstButton;
@@ -60,29 +58,31 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.areaResultCircle)
         TextView areaAmountCircle;
 
+    @BindView(R.id.tvResult)
+        TextView tvResultOutput;
+    @BindView(R.id.tvAnotherResult)
+        TextView tvAnothreResultOutput;
+
+    private int[] arr = {2, 4, 1, 5, 6, 3};
+    private int[] arr1 = {5, 4, 7, 1, 2, 3, 1, 8};
 
     Rectangle newRectangle = new Rectangle(3,4);
     Square newSquare = new Square(4);
     Circle newCircle = new Circle(5);
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
-        TextView tvResult = findViewById(R.id.tvResult);
-        TextView newText = findViewById(R.id.tvAnotherResult);
-
+        
 
         Sort newSort = new Sort();
         int[] sortMass = newSort.bubbleSort(arr);
         int[] newSortMass = newSort.choiseSort(arr1);
 
         EnumDirections newEnum = new EnumDirections();
-        int[] resutedArray = newEnum.changeCoordinates(3,4, EnumDirections.Directions.UP);
+        int[] resutedArray = newEnum.changeCoordinates(3,4, Directions.UP);
         int[] outPutArray = newEnum.fewSteps();
 
         LyamdaTask newLyambda = new LyamdaTask();
@@ -90,8 +90,8 @@ public class MainActivity extends AppCompatActivity {
         newLyambda.repeatTask(10, myClosure);
 
 
-        tvResult.setText(Arrays.toString(resutedArray));
-        newText.setText(Arrays.toString(outPutArray));
+        tvResultOutput.setText(Arrays.toString(resutedArray));
+        tvAnothreResultOutput.setText(Arrays.toString(outPutArray));
 
     }
 

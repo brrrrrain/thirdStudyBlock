@@ -1,14 +1,14 @@
 package com.example.hp.thenewestproject.Figure;
 
-public class Square implements FigureWithInterface.Shape {
+public class Square implements Shape {
     private double side;
-
-    public double getSide() {
-        return side;
-    }
 
     public Square(double side) {
         this.side = side;
+    }
+
+    public double getSide() {
+        return side;
     }
 
     @Override

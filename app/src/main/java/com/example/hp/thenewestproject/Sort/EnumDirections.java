@@ -68,11 +68,4 @@ public class EnumDirections {
         }
         return finalPathArray;
     }
-
-    public enum Directions{
-        UP,
-        DOWN,
-        LEFT,
-        RIGHT
-    }
 }
