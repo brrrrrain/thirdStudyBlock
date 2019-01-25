@@ -23,6 +23,8 @@ public class EnumDirections {
                 x += 1;
                 y = y;
                 break;
+            default:
+                break;
         }
 
         return new int[] {x,y};
@@ -53,6 +55,8 @@ public class EnumDirections {
                 case RIGHT:
                     location[0] += 1;
                     location[1] = location[1];
+                    break;
+                default:
                     break;
             }
             fullPath.add(location[0]);
