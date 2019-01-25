@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -80,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tvResult = findViewById(R.id.tvResult);
         TextView newText = findViewById(R.id.tvAnotherResult);
-        TextView forLyambda = findViewById(R.id.lyambdaTask);
 
 
         ButterKnife.bind(this);
@@ -92,6 +92,10 @@ public class MainActivity extends AppCompatActivity {
         EnumDirections newEnum = new EnumDirections();
         int[] resutedArray = newEnum.changeCoordinates(3,4, EnumDirections.Directions.UP);
         int[] outPutArray = newEnum.fewSteps();
+
+        LyamdaTask newLyambda = new LyamdaTask();
+        Runnable myClosure = () -> Log.d("result", "I love Java");
+        newLyambda.repeatTask(10, myClosure);
 
 
         tvResult.setText(Arrays.toString(resutedArray));

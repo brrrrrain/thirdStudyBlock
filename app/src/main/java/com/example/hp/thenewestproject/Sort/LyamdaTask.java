@@ -5,22 +5,15 @@ package com.example.hp.thenewestproject.Sort;
  */
 
 public class LyamdaTask  {
-    String[] outputArray = new String[10];
-    String newStr;
-   // Runnable myClosure = () -> run();
+    //String newStr = "I love Java!";
+    //Runnable myClosure = () -> System.out.println("I love Java");
 
 
-    /*public String repeatTask(int times, Runnable task){
-        String anotherStr = task.run();
-        return task.run();
+    public void repeatTask(int times, Runnable task){
+        for (int i = 0; i < times; i++) {
+            task.run();
+        }
     }
-
-
-    public void run(){
-        newStr = "I love Java";
-
-        return newStr;
-    }*/
 }
 
 
