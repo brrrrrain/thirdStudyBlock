@@ -131,5 +131,21 @@
         android:background="@color/colorPrimary"
         android:text="@string/btnShowCircleArea"
         android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/stringShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_for_all_strings"
+        android:text="" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/outputStringShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnStringAbout"
+        android:textColor="@color/colorPrimaryDark" />
+
 </LinearLayout>
 </ScrollView>

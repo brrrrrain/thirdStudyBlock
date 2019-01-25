@@ -6,10 +6,13 @@ package com.example.hp.thenewestproject.Sort;
 
 public class LyamdaTask  {
 
-    public void repeatTask(int times, Runnable task){
+    public String[] repeatTask(int times, ShowRandomString task){
+        String[] outputArray = new String[times];
         for (int i = 0; i < times; i++) {
-            task.run();
+            outputArray[i] = task.print("I love Java");
         }
+
+        return outputArray;
     }
 }
 

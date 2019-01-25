@@ -14,6 +14,7 @@ import com.example.hp.thenewestproject.Figure.Square;
 import com.example.hp.thenewestproject.Sort.Directions;
 import com.example.hp.thenewestproject.Sort.EnumDirections;
 import com.example.hp.thenewestproject.Sort.LyamdaTask;
+import com.example.hp.thenewestproject.Sort.ShowRandomString;
 import com.example.hp.thenewestproject.Sort.Sort;
 
 import java.util.Arrays;
@@ -63,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tvAnotherResult)
         TextView tvAnothreResultOutput;
 
+    @BindView(R.id.stringShow)
+        TextView outputString;
+
     private int[] arr = {2, 4, 1, 5, 6, 3};
     private int[] arr1 = {5, 4, 7, 1, 2, 3, 1, 8};
 
@@ -75,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        
+
 
         Sort newSort = new Sort();
         int[] sortMass = newSort.bubbleSort(arr);
@@ -86,8 +90,13 @@ public class MainActivity extends AppCompatActivity {
         int[] outPutArray = newEnum.fewSteps();
 
         LyamdaTask newLyambda = new LyamdaTask();
-        Runnable myClosure = () -> Log.d("result", "I love Java");
-        newLyambda.repeatTask(10, myClosure);
+        ShowRandomString myClosure = str -> str;
+        String[] newArray = new String[10];
+        newArray = newLyambda.repeatTask(10, myClosure);
+        for (int i = 0; i < newArray.length; i++){
+            outputString.setText(newArray[i]);
+        }
+
 
 
         tvResultOutput.setText(Arrays.toString(resutedArray));

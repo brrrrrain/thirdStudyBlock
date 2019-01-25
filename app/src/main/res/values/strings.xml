@@ -14,4 +14,5 @@
     <string name="btnShowSquareArea"> Найти площадь квадрата </string>
     <string name="btnShowCirclePerimetr"> Найти периметр круга </string>
     <string name="btnShowCircleArea"> Найти площадь круга </string>
+    <string name="btnStringAbout"> Пояснение к строке </string>
 </resources>
