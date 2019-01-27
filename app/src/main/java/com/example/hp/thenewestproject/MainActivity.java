@@ -2,11 +2,12 @@ package com.example.hp.thenewestproject;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.example.hp.thenewestproject.Figure.Circle;
 import com.example.hp.thenewestproject.Figure.Rectangle;
@@ -17,6 +18,7 @@ import com.example.hp.thenewestproject.Sort.LyamdaTask;
 import com.example.hp.thenewestproject.Sort.ShowRandomString;
 import com.example.hp.thenewestproject.Sort.Sort;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import butterknife.BindView;
@@ -64,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tvAnotherResult)
         TextView tvAnothreResultOutput;
 
-    @BindView(R.id.stringShow)
-        TextView outputString;
 
     private int[] arr = {2, 4, 1, 5, 6, 3};
     private int[] arr1 = {5, 4, 7, 1, 2, 3, 1, 8};
@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
     Rectangle newRectangle = new Rectangle(3,4);
     Square newSquare = new Square(4);
     Circle newCircle = new Circle(5);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,12 +92,22 @@ public class MainActivity extends AppCompatActivity {
 
         LyamdaTask newLyambda = new LyamdaTask();
         ShowRandomString myClosure = str -> str;
-        String[] newArray = new String[10];
+        ArrayList<String> newArray = new ArrayList<String>();
         newArray = newLyambda.repeatTask(10, myClosure);
-        for (int i = 0; i < newArray.length; i++){
-            outputString.setText(newArray[i]);
-        }
 
+        ListView stringShowList = (ListView) findViewById(R.id.arrayList);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter(this,
+                android.R.layout.simple_list_item_1, newArray);
+
+        stringShowList.setAdapter(adapter);
+
+        Button btnAbout = findViewById(R.id.outputStringShow);
+        btnAbout.setOnClickListener(
+                view -> Toast.makeText(getApplicationContext(),
+                        getString(R.string.btnStringAbout),
+                        Toast.LENGTH_LONG).show()
+        );
 
 
         tvResultOutput.setText(Arrays.toString(resutedArray));

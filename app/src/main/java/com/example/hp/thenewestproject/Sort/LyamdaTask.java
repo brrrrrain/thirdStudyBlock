@@ -1,15 +1,18 @@
 package com.example.hp.thenewestproject.Sort;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
   Создание и реализация простого лямбда-выражения
  */
 
 public class LyamdaTask  {
 
-    public String[] repeatTask(int times, ShowRandomString task){
-        String[] outputArray = new String[times];
+    public ArrayList<String> repeatTask(int times, ShowRandomString task){
+        ArrayList<String> outputArray = new ArrayList<String>();
         for (int i = 0; i < times; i++) {
-            outputArray[i] = task.print("I love Java");
+            outputArray.add(task.print("I love Java"));
         }
 
         return outputArray;

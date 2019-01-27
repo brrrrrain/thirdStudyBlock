@@ -132,12 +132,12 @@
         android:text="@string/btnShowCircleArea"
         android:textColor="@color/colorPrimaryDark" />
 
-    <TextView
-        android:id="@+id/stringShow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/top_margin_for_all_strings"
-        android:text="" />
+
+    <ListView
+        android:id="@+id/arrayList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/List_View_height">
+    </ListView>
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/outputStringShow"
