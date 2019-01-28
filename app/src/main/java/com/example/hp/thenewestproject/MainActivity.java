@@ -66,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tvAnotherResult)
         TextView tvAnothreResultOutput;
 
+    @BindView(R.id.arrayList)
+        ListView newArrayList;
+
 
     private int[] arr = {2, 4, 1, 5, 6, 3};
     private int[] arr1 = {5, 4, 7, 1, 2, 3, 1, 8};
@@ -91,16 +94,15 @@ public class MainActivity extends AppCompatActivity {
         int[] outPutArray = newEnum.fewSteps();
 
         LyamdaTask newLyambda = new LyamdaTask();
-        ShowRandomString myClosure = str -> str;
-        ArrayList<String> newArray = new ArrayList<String>();
-        newArray = newLyambda.repeatTask(10, myClosure);
-
-        ListView stringShowList = (ListView) findViewById(R.id.arrayList);
+        ShowRandomString myClosure = str -> {
+            return str;
+        };
+        ArrayList<String> newArray = newLyambda.repeatTask(10, myClosure);
 
         ArrayAdapter<String> adapter = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, newArray);
 
-        stringShowList.setAdapter(adapter);
+        newArrayList.setAdapter(adapter);
 
         Button btnAbout = findViewById(R.id.outputStringShow);
         btnAbout.setOnClickListener(

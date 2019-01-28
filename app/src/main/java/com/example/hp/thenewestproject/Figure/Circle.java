@@ -13,7 +13,6 @@ public class Circle implements Shape {
 
     @Override
     public double perimetr() {
-
         return Math.PI * getDiametr();
     }
 
