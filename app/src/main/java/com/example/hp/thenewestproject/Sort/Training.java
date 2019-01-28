@@ -13,11 +13,11 @@ public class Training {
         return i;
     }
 
-    @NonNull
     @Override
     public String toString() {
-        String str = String.valueOf(getI());
-        return str;
+        return "Training{" +
+                "i=" + i +
+                '}';
     }
 
 
