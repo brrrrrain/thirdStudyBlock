@@ -1,5 +1,7 @@
 package com.example.hp.thenewestproject.Sort;
 
+import android.support.annotation.NonNull;
+
 public class Training {
     private Integer i;
 
@@ -11,11 +13,13 @@ public class Training {
         return i;
     }
 
+    @NonNull
     @Override
     public String toString() {
         String str = String.valueOf(getI());
         return str;
     }
+
 
     public void multiplication(){
         i = i * 2;

@@ -36,32 +36,39 @@ public class MainActivity extends AppCompatActivity {
 
         int i3 = 5;
         int i4 = 2;
+
+        Log.d("rezult: ", "i3 = " + i3 + " i4 = " + i4);
+
         i3 = i4;
 
+        Log.d("rezult1: ", "i3 = " + i3 + " i4 = " + i4);
+
         i4 = i4*2;
+
+        Log.d("rezult2: ", "i3 = " + i3 + " i4 = " + i4);
+
         metod2(i3);
 
-        String str3 = String.valueOf(i3);
-        String str4 = String.valueOf(i4);
-
-        Log.d("i3", str3);
-        Log.d("i4", str4);
+        Log.d("rezult3: ", "i3 = " + i3 + " i4 = " + i4);
 
 
 
         Training i1 = new Training(5);
         Training i2 = new Training(2);
+
+        Log.d("ObjectRezult: ", "i1 = " + i1 + " i2 = " + i2);
+
         i1 = i2;
+
+        Log.d("ObjectRezult1: ", "i1 = " + i1 + " i2 = " + i2);
+
         i2.multiplication();
+
+        Log.d("ObjectRezult2: ", "i1 = " + i1 + " i2 = " + i2);
 
         metod(i1);
 
-
-        String str1 = String.valueOf(i1);
-        String str2 = String.valueOf(i2);
-
-        Log.d("first", str1);
-        Log.d("second", str2);
+        Log.d("ObjectRezult3: ", "i1 = " + i1 + " i2 = " + i2);
 
 
         tvResult.setText(Arrays.toString(sortMass));
@@ -80,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
         a.multiplication();
     }
 
-    public void metod2(int ii){
-        ii = ii * 2;
+    public void metod2(int x){
+        x *= 2;
     }
 
 }
