@@ -94,8 +94,9 @@ public class MainActivity extends AppCompatActivity {
         int[] outPutArray = newEnum.fewSteps();
 
         LyamdaTask newLyambda = new LyamdaTask();
-        ShowRandomString myClosure = str -> {
-            return str;
+        ShowRandomString myClosure = (i,str) -> {
+
+            return "Итерация = " +i + ": " + str;
         };
         ArrayList<String> newArray = newLyambda.repeatTask(10, myClosure);
 
