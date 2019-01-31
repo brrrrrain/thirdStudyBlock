@@ -2,6 +2,17 @@
     <string name="app_name">TheNewestProject</string>
     <string name="str">Hello World!</string>
     <string name="anotherstr">Hello World!</string>
-    <string name="click">Click</string>
-    <string name="textByButton">textText</string>
+    <string name="click">Пояснение к строке</string>
+    <string name="textByButton">Координаты после перехода</string>
+    <string name="secondButton">Пояснение к строке</string>
+    <string name="secondButtonText">Первые 2 цифры - начальные
+        координаты, далее - каждая пара это координаты после
+        сделанного перехода, последние две цифры - конечные координаты</string>
+    <string name="btnShowRectPerimetr"> Найти периметр прямоугольника </string>
+    <string name="btnShowRectArea"> Найти площадь прямоугольника </string>
+    <string name="btnShowSquarePerimetr"> Найти периметр квадрата </string>
+    <string name="btnShowSquareArea"> Найти площадь квадрата </string>
+    <string name="btnShowCirclePerimetr"> Найти периметр круга </string>
+    <string name="btnShowCircleArea"> Найти площадь круга </string>
+    <string name="btnStringAbout"> Повторение строки 10 раз </string>
 </resources>

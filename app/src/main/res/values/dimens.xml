@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_margin_for_all_strings"> 20dp </dimen>
+    <dimen name="List_View_height"> 500dp </dimen>
+</resources>

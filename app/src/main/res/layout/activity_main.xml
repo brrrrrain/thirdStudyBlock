@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvResult"
@@ -12,27 +17,135 @@
         android:layout_height="wrap_content"
         android:text="@string/str" />
 
-    <TextView
-        android:id="@+id/tvAnotherResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/anotherstr" />
-
-
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/btnId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:text="@string/click"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tvAnotherResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_for_all_strings"
+        android:text="@string/anotherstr" />
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/anotherId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:text="Click"
+        android:text="@string/secondButton"
         android:textColor="@color/colorPrimaryDark"/>
 
+    <TextView
+        android:id="@+id/perimetrResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_for_all_strings"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/areaResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/rectPerimetr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnShowRectPerimetr"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/rectArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_for_all_strings"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnShowRectArea"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/perimetrResultSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_for_all_strings"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/areaResultSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/squarePerimetr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnShowSquarePerimetr"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/squareArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_for_all_strings"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnShowSquareArea"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/perimetrResultCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_for_all_strings"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/areaResultCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/circlePerimetr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnShowCirclePerimetr"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/circleArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_for_all_strings"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnShowCircleArea"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <ListView
+        android:id="@+id/arrayList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/List_View_height">
+    </ListView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/outputStringShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnStringAbout"
+        android:textColor="@color/colorPrimaryDark" />
+
 </LinearLayout>
+</ScrollView>
